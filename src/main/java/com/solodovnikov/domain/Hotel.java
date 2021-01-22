@@ -14,11 +14,11 @@ public class Hotel {
     private String name;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "review_id", referencedColumnName = "id", nullable = false)
+    @JoinColumn(name = "review_id", referencedColumnName = "id")
     private Review review;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "country_id", referencedColumnName = "id", nullable = false)
+    @JoinColumn(name = "country_id", referencedColumnName = "id")
     private Country country;
 
     public Hotel() {
